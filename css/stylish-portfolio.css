@@ -154,6 +154,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: rgba(0,0,0,0.6);
 }
 
 /* About */
@@ -195,3 +196,23 @@ hr.small {
 footer {
     padding: 10px;
 }
+
+/* Hyperlink Coloring for Blog */
+
+/* unvisited link */
+#blog_link:link {
+    color: white;
+}
+
+/* visited link */
+#blog_link:visited {
+    color: white;
+}
+
+ /*mouse over link */
+#blog_link:hover {
+    color: hotpink;
+}
+
+
+
