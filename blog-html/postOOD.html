@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - OOP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/blog-post.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+                    Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blogByCategory.html">Blogs by Type</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../work-experience.html">Work Experience</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">OOD Principles</h1>
+
+          <!-- Description -->
+          <h4><i>A study-guide put together from different resources.</i></h4>
+          <!-- Date/Time -->
+          <p>May 23, 2018 at 12:35 PM</p>
+
+          <hr>
+
+          <!-- Table of Contents -->
+          <div id="toc_container">
+          <p class="toc_title">Contents</p>
+          <ul class="toc_list">
+            <li><a href="#First_Point_Header">1) What is OOP?</a>
+          </li>
+          <li><a href="#Second_Point_Header">2) Main Principles</a></li>
+            <ul>
+              <li><a href="#Second_Sub_Point_1">2.1) Inheritance</a></li>
+              <li><a href="#Second_Sub_Point_2">2.2) Encapsulation</a></li>
+              <li><a href="#Second_Sub_Point_3">2.3) Abstraction</a></li>
+              <li><a href="#Second_Sub_Point_4">2.4) Polymorphism</a></li>
+            </ul>
+          <li><a href="#Third_Point_Header">3) Further Reading</a></li>
+
+          </ul>
+          </div>
+
+          <!-- Post Content -->
+          <p id="First_Point_Header"><b>What is Object-Oriented Programming?</b></p>
+
+          <p>OOP is a programming style in which a program is split into self-contained objects, with each object representing different parts of the program and contains its own data and logic. These objects interact with each other to form the program as a whole. </p>
+
+          <p>You might be wondering what I mean by an object. An object is anything with a <i>state</i> and <i>behavior</i>. Real-world objects share these characteristics. For example, dogs have state (name, color, breed, hungry) and behavior (barking, fetching, wagging tail). In programming, an object stores its state in variables and exposes its behavior through methods.</p>
+
+          <p>Here are some of the benefits of OOP:
+            <ul>
+              <li><i>Modularity</i>: The source code for an object can be written and maintained independently of the source code for other objects. Once created, an object can be easily passed around inside the system.</li>
+              <li><i>Information-hiding</i>: By interacting only with an object's methods, the details of its internal implementation remain hidden from the outside world.</li>
+              <li><i>Reusability</i>: If an object already exists (perhaps written by another software developer), you can use that object in your program. This allows specialists to implement/test/debug complex, task-specific objects, which you can then trust to run in your own code.</li>
+              <li><i>Debugging ease</i>: If a particular object turns out to be problematic, you can simply remove it from your application and plug in a different object as its replacement. This is analogous to fixing mechanical problems in the real world. If a bolt breaks, you replace it, not the entire machine</li>
+            </ul>
+          </p>
+
+          <p id="Second_Point_Header"><b>The Four Main Principles</b></p>
+
+          <p>OOP has four main principles. They are inheritance, encapsulation, abstraction, and polymorphism.</p>
+
+          <p id="Second_Sub_Point_1"><i>1) Inheritance</i> – When classes inherit commonly used variables and methods from other classes. E.g. Animals includes subclasses dog and cat. </p>
+          <p>Pros: reusability, extensibility, data hiding. Cons: classes (base and inherited) gets tightly coupled and so isn’t independent.</p>
+
+          </br>
+
+          <p id="Second_Sub_Point_2"><i>2) Encapsulation</i> - used to refer to two notions.
+          <p>Encapsulation of Data – process of encapsulating variables and methods together in a unit. Variables of a class will be hidden from other classes depending on which access modifiers are used – know as data hiding. Each class in Java is an example of encapsulation.</p>
+          <p>Restricting access to object’s components - variables of a class will be hidden from other classes by making variables private, and can be accessed only through the methods of their current class. Setter and getter method used to update the private variables via public methods. Allows for data hiding because protects variable from outside world. </p>
+          <p>Pros: allows for data hiding, can make class read-only or write-only by providing setter and getter methods, also, provides you control over the data because you set the values through setter and getters methods. 
+          </p>
+
+          </br>
+
+          <p id="Second_Sub_Point_3"><i>3) Abstraction</i> – Process of hiding implementation details from user, only functionality will be provided to user. In that way, user will only have info on what object does instead of how it does it.</p>
+          <p>Pros: makes code more readable and simple since complexity is hidden, easier to maintain code since program is very complex without abstraction.</p>
+          <p>The following picture illustrates the use of encapsulation and abstraction.<img src="../img/abstractionEx.png" alt="Abstraction Example"></p>
+
+          </br>
+          <p id="Second_Sub_Point_4"><i>4) Polymorphism</i> – Allows us to process objects differently based on their data type. Two types: Compile time polymorphism (static binding) and Runtime polymorphism (dynamic binding). Method overloading is an example of static polymorphism, while method overriding is an example of dynamic polymorphism. Static polymorphism in Java is achieved by method overloading. Dynamic polymorphism in Java is achieved by method overriding. Overriding is run-time while overloading is compile-time. 
+          <img src="../img/polymorphismEx.png" alt="Polymorphism Example">
+          </p>
+
+          </br>
+
+          <p id="Third_Point_Header"><b>Further Reading</b></p>
+          <p id=>Two important concepts that rely on OOPs is <i>abstract</i> and <i>interface</i>. I'm not going to go in detail about it, but I recommend taking a look at these links: <a href="http://beginnersbook.com/2013/05/java-abstract-class-method/">java-abstract-class-method</a>, <a href="http://beginnersbook.com/2014/01/abstract-method-with-examples-in-java/">abstract-method-with-examples-in-java</a>, <a href="http://beginnersbook.com/2013/05/java-interface/">java-interface</a>. 
+          </p>
+
+          <hr>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="blogCompSci.html">Computer Science</a>
+                    </li>
+                    <li>
+                      <a href="#">Tech Projects</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="postTravel.html">Traveling</a>
+                    </li>
+                    <li>
+                      <a href="#">Fitness</a>
+                    </li>
+                    <li>
+                      <a href="postPiano.html">Piano</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+   <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <!-- Linkedin -->
+              <li class="list-inline-item">
+
+                <a href="https://www.linkedin.com/in/jasonvl" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin-square fa-stack-1x fa-inverse"></i>
+                    <p>Linkedin</p>
+                  </span>
+                </a>
+              </li>
+
+              <!-- Email -->
+              <li class="list-inline-item">
+                <a href="mailto:vazquezlijason@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                    <p>Email</p>
+                  </span>
+                </a>
+              </li>
+
+              <!-- Facebook -->
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/public/Jason-Vazquez-Li" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    <p>Facebook</p>
+                  </span>
+                </a>
+              </li>
+
+              <!-- Github -->
+              <li class="list-inline-item">
+                <a href="https://github.com/jasonvl" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github-square fa-stack-1x fa-inverse"></i>
+                    <p>Github</p>
+                  </span>
+                </a>
+              </li>
+
+            </ul>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
